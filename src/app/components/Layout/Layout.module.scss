@@ -1,0 +1,22 @@
+.logo {
+  color: white;
+  line-height: 31px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+
+  :global li:first-child {
+    margin-left: auto;
+  }
+}
+
+.contentWrapper {
+  grid-template-rows: auto calc(100vh - 94px);
+}

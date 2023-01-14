@@ -1,0 +1,16 @@
+.cartIcon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 30px;
+  font-size: 30px !important;
+}
+
+.badge {
+  color: inherit;
+  transform: translateY(18px);
+
+  :global .ant-badge-count {
+    box-shadow: 0 0 0 1px transparent;
+  }
+}
