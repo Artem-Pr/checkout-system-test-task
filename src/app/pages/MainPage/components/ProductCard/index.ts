@@ -1,0 +1,1 @@
+export {MemoizedProductCard} from './ProductCard';

@@ -6,6 +6,10 @@
   display: grid;
 }
 
+.justify-self-end {
+  justify-self: end;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -28,4 +32,21 @@
 
 .gap-10 {
   gap: 10px
+}
+
+.mw-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.p-10 {
+  padding: 10px;
 }
