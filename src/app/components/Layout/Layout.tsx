@@ -12,13 +12,19 @@ import cn from 'classnames';
 
 import styles from './Layout.module.scss';
 
+import {RoutePaths} from '../../../globalTypes';
+import {getFormattedPrice} from '../../../helpers/getFormattedPrice';
+import {getTotalPriceEntity} from '../../../redux/selectors/cartSelectors';
 import {getLoading} from '../../../redux/selectors/sessionSelectors';
 
 import {navigateMenuItems} from './helpers';
 
 export const Layout = () => {
     const {pathname} = useLocation();
+    const {totalPrice} = useSelector(getTotalPriceEntity);
     const loading = useSelector(getLoading);
+
+    const isMainPage = pathname === RoutePaths.MARKET;
 
     return (
         <AntdLayout className={cn(styles.contentWrapper, 'h-100vh d-grid')}>
@@ -32,6 +38,14 @@ export const Layout = () => {
                     selectedKeys={[pathname]}
                 />
             </Header>
+            {isMainPage
+                ? (
+                    <div className="m-10 justify-self-end">
+                        <span>Total price:</span>
+                        <span className="ml-10">{getFormattedPrice(totalPrice)}</span>
+                    </div>
+                )
+                : <div />}
             <Spin
                 spinning={loading}
                 size="large"
