@@ -1,0 +1,1 @@
+export {updateCartWithNewProductQuantity} from './updateCartWithNewProductQuantity';

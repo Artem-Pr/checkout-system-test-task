@@ -12,6 +12,10 @@ const cartSlice = createSlice({
             state.cart += action.payload;
             console.info('current cart:', current(state).cart);
         },
+        updateCart(state, action: PayloadAction<string>) {
+            state.cart = action.payload;
+            console.info('current cart:', current(state).cart);
+        },
     },
 });
 
@@ -19,4 +23,5 @@ export const cartReducer = cartSlice.reducer;
 
 export const {
     addProductToCart,
+    updateCart,
 } = cartSlice.actions;

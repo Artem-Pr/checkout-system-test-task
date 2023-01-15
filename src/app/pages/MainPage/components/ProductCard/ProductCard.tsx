@@ -27,12 +27,14 @@ interface Props {
     label: string
     preview: string
     price: PriceObject
+    onAddToCard: () => void
 }
 
-const ProductCard = ({
+export const ProductCard = ({
     label,
     preview,
     price,
+    onAddToCard,
 }: Props) => {
     const discountPercentage = useMemo(() => (
         isUnitDiscount(price) && getDiscountPercentage(price)
@@ -70,12 +72,11 @@ const ProductCard = ({
             <Text>{label}</Text>
             <Button
                 type="primary"
+                onClick={onAddToCard}
                 block
             >
-            Add to Cart
+                Add to Cart
             </Button>
         </Card>
     );
 };
-
-export const MemoizedProductCard = React.memo(ProductCard);

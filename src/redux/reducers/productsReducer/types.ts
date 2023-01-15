@@ -1,4 +1,4 @@
-import {DiscountType} from '../../../globalTypes/DiscountType';
+import {DiscountType} from '../../../globalTypes';
 
 export interface PriceObject {
     unitPrice: number
