@@ -5,7 +5,7 @@ import type {PayloadAction} from '@reduxjs/toolkit';
 import type {ProductResponse} from '../../../api/getProducts/types';
 
 import {initialState} from './productsState';
-import {PriceObject} from './types';
+import type {PriceObject, SpecialPrice} from './types';
 
 const productsSlice = createSlice({
     name: 'products',
@@ -17,6 +17,15 @@ const productsSlice = createSlice({
         setPrices(state, action: PayloadAction<Record<string, PriceObject>>) {
             state.prices = action.payload;
         },
+        setUnitPrice(state, action: PayloadAction<{code: string, unitPrice: number}>) {
+            state.prices[action.payload.code].unitPrice = action.payload.unitPrice;
+        },
+        setSpecialPrice(state, action: PayloadAction<{code: string, specialPrice: SpecialPrice}>) {
+            state.prices[action.payload.code].specialPrice = action.payload.specialPrice;
+        },
+        removeSpecialPrice(state, action: PayloadAction<string>) {
+            delete state.prices[action.payload].specialPrice;
+        },
     },
 });
 
@@ -25,4 +34,7 @@ export const productsReducer = productsSlice.reducer;
 export const {
     setProducts,
     setPrices,
+    setUnitPrice,
+    setSpecialPrice,
+    removeSpecialPrice,
 } = productsSlice.actions;
