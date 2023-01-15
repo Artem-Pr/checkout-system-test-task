@@ -18,5 +18,10 @@
 }
 
 .contentWrapper {
-  grid-template-rows: auto 30px calc(100vh - 94px);
+  grid-template-rows: auto calc(100vh - 94px);
+
+  :global .ant-spin-nested-loading {
+    margin-top: 10px;
+    overflow-y: scroll;
+  }
 }
