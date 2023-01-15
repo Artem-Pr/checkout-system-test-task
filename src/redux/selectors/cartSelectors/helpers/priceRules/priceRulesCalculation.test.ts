@@ -1,6 +1,6 @@
 import {priceRulesCalculation} from './priceRulesCalculation';
-import {DiscountType} from '../../../../globalTypes/DiscountType';
-import type {PriceObject} from '../../../reducers/productsReducer/types';
+import {DiscountType} from '../../../../../globalTypes';
+import type {PriceObject} from '../../../../reducers/productsReducer/types';
 
 describe('priceRulesCalculation', () => {
     describe('without discount', () => {

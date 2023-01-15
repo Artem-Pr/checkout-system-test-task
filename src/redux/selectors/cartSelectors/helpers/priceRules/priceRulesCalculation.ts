@@ -1,5 +1,5 @@
-import {DiscountType} from '../../../../globalTypes';
-import type {PriceObject} from '../../../reducers/productsReducer/types';
+import {DiscountType} from '../../../../../globalTypes';
+import type {PriceObject} from '../../../../reducers/productsReducer/types';
 
 export const priceRulesCalculation = {
     [DiscountType.WITHOUT_DISCOUNT]: (count: number, {unitPrice}: PriceObject) => (

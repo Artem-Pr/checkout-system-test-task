@@ -10,7 +10,7 @@ import cn from 'classnames';
 
 import styles from './Layout.module.scss';
 
-import {navigateMenuItems} from './helpers/index';
+import {navigateMenuItems} from './helpers';
 
 export const Layout = () => {
     const {pathname} = useLocation();

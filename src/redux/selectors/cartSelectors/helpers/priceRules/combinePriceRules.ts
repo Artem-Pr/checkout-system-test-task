@@ -1,7 +1,7 @@
-import type {PriceObject} from '../../../reducers/productsReducer/types';
-import type {PriceRules} from '../types';
+import type {PriceObject} from '../../../../reducers/productsReducer/types';
 
 import {getPriceRule} from './getPriceRule';
+import type {PriceRules} from './types';
 
 export const combinePriceRules = (prices: Record<string, PriceObject>): PriceRules => (
     Object

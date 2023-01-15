@@ -1,4 +1,4 @@
-import {DiscountType} from '../globalTypes/DiscountType';
+import {DiscountType} from '../globalTypes';
 import type {PriceObject} from '../redux/reducers/productsReducer/types';
 
 export const isUnitDiscount = (priceEntity: PriceObject) => (

@@ -1,4 +1,4 @@
-import type {PriceRules} from '../types';
+import type {PriceRules} from '../priceRules/types';
 
 export const getTotalPricePerProduct = (
     productCounts: Record<string, number>,

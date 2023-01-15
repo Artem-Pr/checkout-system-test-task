@@ -1,16 +1,16 @@
 import {createSelector} from '@reduxjs/toolkit';
 
+import type {CartTableData} from '../../../app/pages/Cart/helpers/types';
 import type {RootState} from '../../store/rootReducer';
-import {getPrices} from '../productsSelectors';
+import {getPrices, getProductsWithPrice} from '../productsSelectors';
 
 import {
     checkout,
     combinePriceRules,
+    prepareCartTableData,
 } from './helpers';
-import type {
-    PriceRules,
-    TotalPriceEntity,
-} from './types';
+import type {TotalPriceEntity} from './helpers/checkout';
+import type {PriceRules} from './helpers/priceRules';
 
 export const getCart = (state: RootState) => state.cartReducer.cart;
 
@@ -23,4 +23,11 @@ export const getTotalPriceEntity: (state: RootState) => TotalPriceEntity = creat
     getCart,
     getPriceRules,
     checkout,
+);
+
+export const getCartTableData: (state: RootState) => CartTableData[] = createSelector(
+    getCart,
+    getTotalPriceEntity,
+    getProductsWithPrice,
+    prepareCartTableData,
 );

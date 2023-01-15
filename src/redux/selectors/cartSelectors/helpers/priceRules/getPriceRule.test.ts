@@ -1,5 +1,5 @@
-import type {PriceObject} from '../../../reducers/productsReducer/types';
-import {DiscountType} from '../../../../globalTypes/DiscountType';
+import type {PriceObject} from '../../../../reducers/productsReducer/types';
+import {DiscountType} from '../../../../../globalTypes';
 import {getPriceRule} from './getPriceRule';
 
 jest.mock('./priceRulesCalculation', () => ({
