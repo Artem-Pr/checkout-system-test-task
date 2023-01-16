@@ -28,4 +28,20 @@ export const initialProductPrices: Record<string, PriceObject> = {
     D: {
         unitPrice: 20,
     },
+    E: {
+        unitPrice: 45,
+    },
+    F: {
+        unitPrice: 80,
+        specialPrice: {
+            type: DiscountType.QUANTITY_DISCOUNT,
+            data: {
+                price: 100,
+                count: 2,
+            },
+        },
+    },
+    G: {
+        unitPrice: 65,
+    },
 };

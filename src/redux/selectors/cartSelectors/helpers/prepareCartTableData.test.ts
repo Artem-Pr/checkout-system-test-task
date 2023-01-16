@@ -20,9 +20,7 @@ describe('prepareCartTableData', () => {
                  price: {
                      unitPrice: 5,
                  },
-                 description: '',
                  preview: '',
-                 image: '',
             },
             {
                 label: 'Product B',
@@ -34,9 +32,7 @@ describe('prepareCartTableData', () => {
                         data: {price: 10, count: 2}
                     }
                 },
-                description: '',
                 preview: '',
-                image: '',
             }
         ]
         expect(prepareCartTableData(
@@ -92,9 +88,7 @@ describe('prepareCartTableData', () => {
                 price: {
                     unitPrice: 5,
                 },
-                description: '',
                 preview: '',
-                image: '',
             },
             {
                 label: 'Product B',
@@ -106,9 +100,7 @@ describe('prepareCartTableData', () => {
                         data: {price: 10, count: 2}
                     }
                 },
-                description: '',
                 preview: '',
-                image: '',
             }
         ]
         expect(prepareCartTableData(

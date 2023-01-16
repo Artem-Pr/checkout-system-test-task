@@ -1,5 +1,6 @@
 .gridWrapper {
   height: 100%;
+  justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
 
   @media (min-width: 920px) {
