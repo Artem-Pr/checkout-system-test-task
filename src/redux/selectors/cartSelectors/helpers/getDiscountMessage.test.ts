@@ -13,7 +13,7 @@ describe('getDiscountMessage', () => {
         }
         expect(getDiscountMessage(mockedPriceEntity)).toBe('3 for 130 \u20AC')
     })
-    it('should return "-40%"', () => {
+    it('should return "-60%"', () => {
         const mockedPriceEntity: PriceObject = {
             unitPrice: 30,
             specialPrice: {
@@ -21,7 +21,7 @@ describe('getDiscountMessage', () => {
                 data: {price: 12}
             }
         }
-        expect(getDiscountMessage(mockedPriceEntity)).toBe('-40%')
+        expect(getDiscountMessage(mockedPriceEntity)).toBe('-60%')
     })
     it('should return ""', () => {
         const mockedPriceEntity: PriceObject = {
