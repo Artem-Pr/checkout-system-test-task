@@ -1,6 +1,7 @@
 import {createSelector} from '@reduxjs/toolkit';
 
-import type {SettingsTableData} from '../../../app/pages/Settings/helpers';
+import type {SettingsTableData} from 'src/app/pages/Settings/helpers';
+
 import type {RootState} from '../../store/rootReducer';
 
 import {addPriceToProductEntities, prepareSettingsTableData} from './helpers';

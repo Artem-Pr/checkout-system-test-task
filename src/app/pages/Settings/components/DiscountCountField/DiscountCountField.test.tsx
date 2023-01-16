@@ -2,13 +2,13 @@ import React from 'react';
 import {render} from '@testing-library/react';
 import userEvent from '@testing-library/user-event'
 import {DiscountCountField} from './DiscountCountField'
-import {DiscountType} from '../../../../../globalTypes/DiscountType';
-import {setSpecialPriceCount} from '../../../../../redux/reducers/productsReducer/Thunks';
+import {DiscountType} from 'src/globalTypes';
+import {setSpecialPriceCount} from 'src/redux/reducers/productsReducer/Thunks';
 
-jest.mock('../../../../../redux/reducers/productsReducer/Thunks', () => ({
+jest.mock('src/redux/reducers/productsReducer/Thunks', () => ({
     setSpecialPriceCount: jest.fn()
 }))
-jest.mock('../../../../../redux/store', () => ({
+jest.mock('src/redux/store', () => ({
     useAppDispatch: () => () => {},
 }))
 

@@ -1,6 +1,7 @@
 import {createSelector} from '@reduxjs/toolkit';
 
-import type {CartTableData} from '../../../app/pages/Cart/helpers/types';
+import type {CartTableData} from 'src/app/pages/Cart/helpers/types';
+
 import type {RootState} from '../../store/rootReducer';
 import {getPrices, getProductsWithPrice} from '../productsSelectors';
 

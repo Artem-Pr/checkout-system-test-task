@@ -1,4 +1,4 @@
-import {DiscountType} from '../../../globalTypes';
+import {DiscountType} from 'src/globalTypes';
 
 export interface SpecialPrice {
     type: DiscountType

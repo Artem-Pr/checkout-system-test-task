@@ -1,4 +1,5 @@
-import {DiscountType} from '../../../../globalTypes';
+import {DiscountType} from 'src/globalTypes';
+
 import type {ProductWithPrice} from '../types';
 
 export const prepareSettingsTableData = (products: ProductWithPrice[]) => (

@@ -2,13 +2,13 @@ import React from 'react';
 import {render} from '@testing-library/react';
 import userEvent from '@testing-library/user-event'
 import {DiscountPriceField} from './DiscountPriceField'
-import {DiscountType} from '../../../../../globalTypes/DiscountType';
-import {setSpecialPriceValue} from '../../../../../redux/reducers/productsReducer/Thunks';
+import {DiscountType} from 'src/globalTypes';
+import {setSpecialPriceValue} from 'src/redux/reducers/productsReducer/Thunks';
 
-jest.mock('../../../../../redux/reducers/productsReducer/Thunks', () => ({
+jest.mock('src/redux/reducers/productsReducer/Thunks', () => ({
     setSpecialPriceValue: jest.fn()
 }))
-jest.mock('../../../../../redux/store', () => ({
+jest.mock('src/redux/store', () => ({
     useAppDispatch: () => () => {},
 }))
 

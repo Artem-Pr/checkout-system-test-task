@@ -1,4 +1,4 @@
-import {DiscountType} from '../../../globalTypes';
+import {DiscountType} from 'src/globalTypes';
 
 import type {PriceObject} from './types';
 

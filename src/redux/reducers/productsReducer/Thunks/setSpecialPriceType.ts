@@ -1,5 +1,6 @@
-import {DiscountType} from '../../../../globalTypes';
-import type {AppThunk} from '../../../store';
+import {DiscountType} from 'src/globalTypes';
+import type {AppThunk} from 'src/redux/store';
+
 import {removeSpecialPrice, setSpecialPrice} from '../productsSlice';
 
 export const setSpecialPriceType = (

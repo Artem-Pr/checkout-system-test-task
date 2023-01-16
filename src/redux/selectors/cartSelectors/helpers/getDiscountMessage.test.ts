@@ -1,6 +1,6 @@
 import {getDiscountMessage} from './getDiscountMessage';
-import type {PriceObject} from '../../../reducers/productsReducer/types';
-import {DiscountType} from '../../../../globalTypes';
+import type {PriceObject} from 'src/redux/reducers/productsReducer/types';
+import {DiscountType} from 'src/globalTypes';
 
 describe('getDiscountMessage', () => {
     it('should return "3 for 130 \u20AC"', () => {

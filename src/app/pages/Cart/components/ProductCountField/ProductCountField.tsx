@@ -2,8 +2,8 @@ import React from 'react';
 
 import {InputNumber} from 'antd';
 
-import {updateCartWithNewProductQuantity} from '../../../../../redux/reducers/cartReducer/Thunks';
-import {useAppDispatch} from '../../../../../redux/store';
+import {updateCartWithNewProductQuantity} from 'src/redux/reducers/cartReducer/Thunks';
+import {useAppDispatch} from 'src/redux/store';
 
 interface Props {
     productCount: number

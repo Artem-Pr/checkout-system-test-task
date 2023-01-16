@@ -1,4 +1,5 @@
-import {getFormattedPrice} from '../../../../helpers';
+import {getFormattedPrice} from 'src/helpers';
+
 import type {ProductWithPrice} from '../../productsSelectors/types';
 
 import {

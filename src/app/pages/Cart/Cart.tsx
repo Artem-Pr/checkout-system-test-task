@@ -7,11 +7,11 @@ import {
 } from 'antd';
 import cn from 'classnames';
 
-import {getFormattedPrice} from '../../../helpers';
+import {getFormattedPrice} from 'src/helpers';
 import {
     getCartTableData,
     getTotalPriceEntity,
-} from '../../../redux/selectors/cartSelectors';
+} from 'src/redux/selectors/cartSelectors';
 
 import styles from './Cart.module.scss';
 

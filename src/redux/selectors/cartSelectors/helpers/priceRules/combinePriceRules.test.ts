@@ -1,5 +1,5 @@
-import type {PriceObject} from '../../../../reducers/productsReducer/types';
-import {DiscountType} from '../../../../../globalTypes';
+import type {PriceObject} from 'src/redux/reducers/productsReducer/types';
+import {DiscountType} from 'src/globalTypes';
 import {combinePriceRules} from './combinePriceRules';
 
 const mockedProductPrices: Record<string, PriceObject> = {

@@ -1,4 +1,4 @@
-import type {PriceObject} from '../../../../reducers/productsReducer/types';
+import type {PriceObject} from 'src/redux/reducers/productsReducer/types';
 
 import {getPriceRule} from './getPriceRule';
 import type {PriceRules} from './types';

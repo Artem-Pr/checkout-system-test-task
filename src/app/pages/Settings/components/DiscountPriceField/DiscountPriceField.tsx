@@ -2,9 +2,9 @@ import React from 'react';
 
 import {InputNumber} from 'antd';
 
-import {DiscountType} from '../../../../../globalTypes/DiscountType';
-import {setSpecialPriceValue} from '../../../../../redux/reducers/productsReducer/Thunks';
-import {useAppDispatch} from '../../../../../redux/store';
+import {DiscountType} from 'src/globalTypes';
+import {setSpecialPriceValue} from 'src/redux/reducers/productsReducer/Thunks';
+import {useAppDispatch} from 'src/redux/store';
 
 interface Props {
     productCode: string

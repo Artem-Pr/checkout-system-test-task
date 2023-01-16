@@ -3,7 +3,8 @@ import {NavLink} from 'react-router-dom';
 
 import type {MenuProps} from 'antd';
 
-import {RoutePaths} from '../../../../../globalTypes/RoutePaths';
+import {RoutePaths} from 'src/globalTypes';
+
 import {CartButton} from '../../components';
 
 export const navigateMenuItems: MenuProps['items'] = [

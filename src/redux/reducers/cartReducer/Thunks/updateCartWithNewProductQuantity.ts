@@ -1,4 +1,5 @@
-import type {AppThunk} from '../../../store';
+import type {AppThunk} from 'src/redux/store';
+
 import {updateCart} from '../cartSlice';
 
 export const updateCartWithNewProductQuantity = (

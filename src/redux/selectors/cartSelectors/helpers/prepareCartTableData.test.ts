@@ -1,7 +1,7 @@
 import {prepareCartTableData} from './prepareCartTableData';
 
 import type {ProductWithPrice} from '../../productsSelectors/types';
-import {DiscountType} from '../../../../globalTypes';
+import {DiscountType} from 'src/globalTypes';
 import type {TotalPriceEntity} from './checkout';
 
 describe('prepareCartTableData', () => {

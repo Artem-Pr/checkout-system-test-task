@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
-import imageD from '../../assets/images/42107.webp';
-import imageG from '../../assets/images/42111.webp';
-import imageB from '../../assets/images/42123.webp';
-import imageA from '../../assets/images/42138.webp';
-import imageC from '../../assets/images/42140.webp';
-import imageF from '../../assets/images/42141.webp';
-import imageE from '../../assets/images/42154.webp';
+import imageD from 'src/assets/images/42107.webp';
+import imageG from 'src/assets/images/42111.webp';
+import imageB from 'src/assets/images/42123.webp';
+import imageA from 'src/assets/images/42138.webp';
+import imageC from 'src/assets/images/42140.webp';
+import imageF from 'src/assets/images/42141.webp';
+import imageE from 'src/assets/images/42154.webp';
 
 import {ProductResponse} from './types';
 

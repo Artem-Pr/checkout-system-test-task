@@ -5,7 +5,7 @@ import {
     Routes,
 } from 'react-router-dom';
 
-import {RoutePaths} from '../globalTypes/RoutePaths';
+import {RoutePaths} from 'src/globalTypes';
 
 import {Layout} from './components';
 import {

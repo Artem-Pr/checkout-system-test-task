@@ -2,7 +2,7 @@
 import {createSlice} from '@reduxjs/toolkit';
 import type {PayloadAction} from '@reduxjs/toolkit';
 
-import type {ProductResponse} from '../../../api/getProducts/types';
+import type {ProductResponse} from 'src/api/getProducts/types';
 
 import {initialState} from './productsState';
 import type {PriceObject, SpecialPrice} from './types';

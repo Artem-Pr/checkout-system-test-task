@@ -3,13 +3,12 @@ import {useSelector} from 'react-redux';
 
 import cn from 'classnames';
 
-import {addProductToCart} from '../../../redux/reducers/cartReducer';
-import {fetchProducts} from '../../../redux/reducers/productsReducer/Thunks/fetchProducts';
+import {addProductToCart} from 'src/redux/reducers/cartReducer';
+import {fetchProducts} from 'src/redux/reducers/productsReducer/Thunks';
+import {getProductsWithPrice} from 'src/redux/selectors/productsSelectors';
+import {useAppDispatch} from 'src/redux/store';
 
 import styles from './MainPage.module.scss';
-
-import {getProductsWithPrice} from '../../../redux/selectors/productsSelectors';
-import {useAppDispatch} from '../../../redux/store';
 
 import {ProductCard} from './components';
 

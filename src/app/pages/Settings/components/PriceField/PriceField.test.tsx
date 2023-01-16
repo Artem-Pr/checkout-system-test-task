@@ -2,12 +2,12 @@ import React from 'react';
 import {render} from '@testing-library/react';
 import userEvent from '@testing-library/user-event'
 import {PriceField} from './PriceField'
-import {setUnitPrice} from '../../../../../redux/reducers/productsReducer';
+import {setUnitPrice} from 'src/redux/reducers/productsReducer';
 
-jest.mock('../../../../../redux/reducers/productsReducer', () => ({
+jest.mock('src/redux/reducers/productsReducer', () => ({
     setUnitPrice: jest.fn()
 }))
-jest.mock('../../../../../redux/store', () => ({
+jest.mock('src/redux/store', () => ({
     useAppDispatch: () => () => {},
 }))
 

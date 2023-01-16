@@ -1,5 +1,6 @@
-import {API} from '../../../../api';
-import type {AppThunk} from '../../../store';
+import {API} from 'src/api';
+import type {AppThunk} from 'src/redux/store';
+
 import {setLoading} from '../../sessionReducer';
 import {setProducts} from '../productsSlice';
 

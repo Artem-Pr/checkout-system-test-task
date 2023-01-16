@@ -1,4 +1,4 @@
-import {ProductResponse} from '../../../api/getProducts/types';
+import type {ProductResponse} from 'src/api/getProducts/types';
 
 import {initialProductPrices} from './InitialProductPrices';
 import type {PriceObject} from './types';

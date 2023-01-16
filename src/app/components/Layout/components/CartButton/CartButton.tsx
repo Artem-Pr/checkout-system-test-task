@@ -5,9 +5,9 @@ import {ShoppingCartOutlined} from '@ant-design/icons';
 import {Badge} from 'antd';
 import cn from 'classnames';
 
-import styles from './CartButton.module.scss';
+import {getCart} from 'src/redux/selectors/cartSelectors';
 
-import {getCart} from '../../../../../redux/selectors/cartSelectors';
+import styles from './CartButton.module.scss';
 
 export const CartButton = () => {
     const cart = useSelector(getCart);

@@ -10,12 +10,13 @@ import {
 import {Header} from 'antd/es/layout/layout';
 import cn from 'classnames';
 
+import {RoutePaths} from 'src/globalTypes';
+import {getFormattedPrice} from 'src/helpers';
+
 import styles from './Layout.module.scss';
 
-import {RoutePaths} from '../../../globalTypes';
-import {getFormattedPrice} from '../../../helpers/getFormattedPrice';
-import {getTotalPriceEntity} from '../../../redux/selectors/cartSelectors';
-import {getLoading} from '../../../redux/selectors/sessionSelectors';
+import {getTotalPriceEntity} from 'src/redux/selectors/cartSelectors';
+import {getLoading} from 'src/redux/selectors/sessionSelectors';
 
 import {navigateMenuItems} from './helpers';
 

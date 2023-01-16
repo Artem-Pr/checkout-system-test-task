@@ -1,4 +1,4 @@
-import type {PriceRules} from '../priceRules/types';
+import type {PriceRules} from '../priceRules';
 
 import {getProductCounts} from './getProductCounts';
 import {getTotalPrice} from './getTotalPrice';

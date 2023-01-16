@@ -1,4 +1,5 @@
-import type {AppThunk} from '../../../store';
+import type {AppThunk} from 'src/redux/store';
+
 import {setSpecialPrice} from '../productsSlice';
 import type {SpecialPrice} from '../types';
 

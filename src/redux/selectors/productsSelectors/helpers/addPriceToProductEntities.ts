@@ -1,5 +1,5 @@
-import type {ProductResponse} from '../../../../api/getProducts/types';
-import type {PriceObject} from '../../../reducers/productsReducer/types';
+import type {ProductResponse} from 'src/api/getProducts/types';
+import type {PriceObject} from 'src/redux/reducers/productsReducer/types';
 
 export const addPriceToProductEntities = (
     prices: Record<string, PriceObject>,

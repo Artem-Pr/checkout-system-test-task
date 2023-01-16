@@ -2,8 +2,8 @@ import React from 'react';
 
 import {InputNumber} from 'antd';
 
-import {setUnitPrice} from '../../../../../redux/reducers/productsReducer';
-import {useAppDispatch} from '../../../../../redux/store';
+import {setUnitPrice} from 'src/redux/reducers/productsReducer';
+import {useAppDispatch} from 'src/redux/store';
 
 interface Props {
     productCode: string

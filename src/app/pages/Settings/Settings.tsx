@@ -6,12 +6,12 @@ import {
     Table,
 } from 'antd';
 
-import {fetchProducts} from '../../../redux/reducers/productsReducer/Thunks';
+import {fetchProducts} from 'src/redux/reducers/productsReducer/Thunks';
 import {
     getProductsWithPrice,
     getSettingsTableData,
-} from '../../../redux/selectors/productsSelectors';
-import {useAppDispatch} from '../../../redux/store';
+} from 'src/redux/selectors/productsSelectors';
+import {useAppDispatch} from 'src/redux/store';
 
 import {settingsTableColumns} from './helpers';
 

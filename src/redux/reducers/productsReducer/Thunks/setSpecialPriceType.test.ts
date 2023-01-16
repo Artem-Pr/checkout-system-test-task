@@ -1,6 +1,6 @@
 import {removeSpecialPrice, setSpecialPrice} from '../productsSlice';
 import {setSpecialPriceType} from './setSpecialPriceType';
-import {DiscountType} from '../../../../globalTypes';
+import {DiscountType} from 'src/globalTypes';
 
 jest.mock('../productsSlice', () => ({
     setSpecialPrice: jest.fn(),

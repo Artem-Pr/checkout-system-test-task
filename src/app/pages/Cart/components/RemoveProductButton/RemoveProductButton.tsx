@@ -3,8 +3,8 @@ import React from 'react';
 import {DeleteOutlined} from '@ant-design/icons';
 import {Button} from 'antd';
 
-import {updateCartWithNewProductQuantity} from '../../../../../redux/reducers/cartReducer/Thunks';
-import {useAppDispatch} from '../../../../../redux/store';
+import {updateCartWithNewProductQuantity} from 'src/redux/reducers/cartReducer/Thunks';
+import {useAppDispatch} from 'src/redux/store';
 
 interface Props {
     productCode: string
