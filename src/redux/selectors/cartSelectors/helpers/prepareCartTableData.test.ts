@@ -57,7 +57,7 @@ describe('prepareCartTableData', () => {
                 key: 'B',
                 productName: 'Product B',
                 productCount: 2,
-                discountTag: '2 for 10',
+                discountTag: '2 for 10 \u20AC',
                 totalPrice: '20 \u20AC',
             }
         ])

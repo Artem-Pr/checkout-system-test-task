@@ -3,7 +3,7 @@ import type {PriceObject} from '../../../reducers/productsReducer/types';
 import {DiscountType} from '../../../../globalTypes';
 
 describe('getDiscountMessage', () => {
-    it('should return "3 for 130"', () => {
+    it('should return "3 for 130 \u20AC"', () => {
         const mockedPriceEntity: PriceObject = {
             unitPrice: 50,
             specialPrice: {
@@ -11,7 +11,7 @@ describe('getDiscountMessage', () => {
                 data: {count: 3, price: 130}
             }
         }
-        expect(getDiscountMessage(mockedPriceEntity)).toBe('3 for 130')
+        expect(getDiscountMessage(mockedPriceEntity)).toBe('3 for 130 \u20AC')
     })
     it('should return "-40%"', () => {
         const mockedPriceEntity: PriceObject = {

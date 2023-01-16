@@ -1,0 +1,1 @@
+export {DiscountTag} from './DiscountTag';
