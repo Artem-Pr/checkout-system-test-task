@@ -6,6 +6,10 @@
   display: grid;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .justify-self-end {
   justify-self: end;
 }

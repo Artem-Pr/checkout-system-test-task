@@ -1,4 +1,5 @@
 import React, {useMemo} from 'react';
+import type {SyntheticEvent} from 'react';
 
 import {
     Button,
@@ -8,6 +9,7 @@ import {
 } from 'antd';
 import cn from 'classnames';
 
+import imgPlaceholder from 'src/assets/images/image-placeholder.svg';
 import {
     getDiscountPercentage,
     getFormattedPrice,
@@ -22,6 +24,10 @@ import styles from './ProductCard.module.scss';
 import {getActualPrice} from './helpers';
 
 const {Text} = Typography;
+
+const handleImageOnLoad = (event: SyntheticEvent<HTMLImageElement>) => {
+    event.currentTarget.classList.remove('d-none');
+};
 
 interface Props {
     label: string
@@ -43,7 +49,21 @@ export const ProductCard = ({
     return (
         <Card
             className={cn(styles.card, 'd-grid')}
-            cover={<img alt={label} src={preview} />}
+            cover={(
+                <>
+                    <img
+                        className={cn(styles.img, 'd-none')}
+                        alt={label}
+                        src={preview}
+                        onLoad={handleImageOnLoad}
+                    />
+                    <img
+                        className={styles.imgPlaceholder}
+                        src={imgPlaceholder}
+                        alt={label}
+                    />
+                </>
+            )}
         >
             <div className="d-flex align-center gap-10">
                 <Text
