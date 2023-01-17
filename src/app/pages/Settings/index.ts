@@ -1,1 +1,2 @@
-export {Settings} from './Settings';
+/* eslint-disable no-restricted-exports */
+export {Settings as default} from './Settings';

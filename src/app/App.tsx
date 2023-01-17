@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import {
     BrowserRouter,
     Route,
@@ -6,13 +6,13 @@ import {
 } from 'react-router-dom';
 
 import {RoutePaths} from 'src/globalTypes';
+import {GlobalLoaderSwitcher} from 'src/uiKit';
 
 import {Layout} from './components';
-import {
-    Cart,
-    MainPage,
-    Settings,
-} from './pages';
+
+const CartPage = lazy(() => import('./pages/Cart'));
+const MainPage = lazy(() => import('./pages/MainPage'));
+const SettingsPage = lazy(() => import('./pages/Settings'));
 
 const App = () => (
     <BrowserRouter>
@@ -25,15 +25,27 @@ const App = () => (
             >
                 <Route
                     index
-                    element={<MainPage />}
+                    element={(
+                        <Suspense fallback={<GlobalLoaderSwitcher />}>
+                            <MainPage />
+                        </Suspense>
+                    )}
                 />
                 <Route
                     path={RoutePaths.CART}
-                    element={<Cart />}
+                    element={(
+                        <Suspense fallback={<GlobalLoaderSwitcher />}>
+                            <CartPage />
+                        </Suspense>
+                    )}
                 />
                 <Route
                     path={RoutePaths.SETTINGS}
-                    element={<Settings />}
+                    element={(
+                        <Suspense fallback={<GlobalLoaderSwitcher />}>
+                            <SettingsPage />
+                        </Suspense>
+                    )}
                 />
             </Route>
         </Routes>
