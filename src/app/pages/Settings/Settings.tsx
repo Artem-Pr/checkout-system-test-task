@@ -13,6 +13,7 @@ import {
 } from 'src/redux/selectors/productsSelectors';
 import {useAppDispatch} from 'src/redux/store';
 
+import {AddNewProductForm} from './components';
 import {settingsTableColumns} from './helpers';
 
 const {Title} = Typography;
@@ -35,6 +36,7 @@ export const Settings = () => {
                 pagination={false}
                 scroll={{x: 700}}
             />
+            <AddNewProductForm />
         </div>
     );
 };

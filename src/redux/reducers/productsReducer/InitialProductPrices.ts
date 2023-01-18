@@ -16,9 +16,10 @@ export const initialProductPrices: Record<string, PriceObject> = {
     B: {
         unitPrice: 30,
         specialPrice: {
-            type: DiscountType.UNIT_DISCOUNT,
+            type: DiscountType.QUANTITY_DISCOUNT,
             data: {
-                price: 12,
+                count: 2,
+                price: 45,
             },
         },
     },
@@ -26,7 +27,7 @@ export const initialProductPrices: Record<string, PriceObject> = {
         unitPrice: 20,
     },
     D: {
-        unitPrice: 20,
+        unitPrice: 15,
     },
     E: {
         unitPrice: 45,
@@ -34,10 +35,9 @@ export const initialProductPrices: Record<string, PriceObject> = {
     F: {
         unitPrice: 80,
         specialPrice: {
-            type: DiscountType.QUANTITY_DISCOUNT,
+            type: DiscountType.UNIT_DISCOUNT,
             data: {
-                price: 100,
-                count: 2,
+                price: 70,
             },
         },
     },

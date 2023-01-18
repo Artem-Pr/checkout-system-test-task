@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import {createSlice} from '@reduxjs/toolkit';
+import {createSlice, current} from '@reduxjs/toolkit';
 import type {PayloadAction} from '@reduxjs/toolkit';
 
 import type {ProductResponse} from 'src/api/getProducts/types';
@@ -14,11 +14,17 @@ const productsSlice = createSlice({
         setProducts(state, action: PayloadAction<ProductResponse[]>) {
             state.products = action.payload;
         },
+        setNewProduct(state, action: PayloadAction<ProductResponse>) {
+            state.products.push(action.payload);
+        },
         setPrices(state, action: PayloadAction<Record<string, PriceObject>>) {
             state.prices = action.payload;
         },
         setUnitPrice(state, action: PayloadAction<{code: string, unitPrice: number}>) {
-            state.prices[action.payload.code].unitPrice = action.payload.unitPrice;
+            state.prices[action.payload.code] = {
+                ...current(state).prices[action.payload.code],
+                unitPrice: action.payload.unitPrice,
+            };
         },
         setSpecialPrice(state, action: PayloadAction<{code: string, specialPrice: SpecialPrice}>) {
             state.prices[action.payload.code].specialPrice = action.payload.specialPrice;
@@ -33,6 +39,7 @@ export const productsReducer = productsSlice.reducer;
 
 export const {
     setProducts,
+    setNewProduct,
     setPrices,
     setUnitPrice,
     setSpecialPrice,
