@@ -16,6 +16,10 @@ jest.mock('antd', () => ({
     Table: () => <div>Table</div>
 }))
 
+jest.mock('./components', () => ({
+    AddNewProductForm: () => <div/>
+}))
+
 jest.mock('src/redux/reducers/productsReducer/Thunks', () => ({
     fetchProducts: jest.fn()
 }))

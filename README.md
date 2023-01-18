@@ -1,5 +1,21 @@
 # The application
 
+## Notes
+
+You can find "checkout" function here: "src/redux/selectors/cartSelectors/helpers/checkout/checkout.ts"
+
+New rules can be added to this object: src/redux/selectors/cartSelectors/helpers/priceRules/priceRulesCalculation.ts
+and then all rules have to be listed here: src/redux/selectors/cartSelectors/helpers/priceRules/getPriceRule.ts
+
+I added another rule for example (unit discount rule)
+I added console.log for the current cart changes, so you can check it in the browser.
+Test coverage is not high, because I didn't test every component. My goal was just to make some examples.
+
+Interface has 3 pages:
+1) market (mainPage) - here you can see the list of products and add it to the cart
+2) settings - here you can change the price and discount type of any products, and add new ones
+3) cart - here you can see all products in the cart, change the number of products and remove it from the cart
+
 ## Available Scripts
 
 In the project directory, you can run:
