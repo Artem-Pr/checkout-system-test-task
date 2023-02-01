@@ -1,8 +1,8 @@
 {
-  "name": "prismic-take-home-test",
+  "name": "checkout-system-test-task",
   "homepage": "https://artem-pr.github.io/checkout-system-test-task/",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@ant-design/icons": "^5.0.0",
     "@reduxjs/toolkit": "^1.9.1",
