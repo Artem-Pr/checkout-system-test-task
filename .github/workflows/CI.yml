@@ -2,7 +2,8 @@ name: CI
 run-name: ${{ github.actor }} is pushed changes
 on: [push]
 jobs:
-  build-and-test:
+  test-build-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout to the repository
@@ -29,7 +30,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install package dependencies
-        run: npm install
+        run: npm ci
 
       - name: Check linting and formatting
         run: npm run lint
@@ -39,3 +40,9 @@ jobs:
 
       - name: Create test build
         run: npm run build
+
+      - name: Deploy 🚀
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            folder: build # The folder the action should deploy.
+            branch: gh-pages

@@ -1,5 +1,6 @@
 {
   "name": "prismic-take-home-test",
+  "homepage": "https://artem-pr.github.io/checkout-system-test-task/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,7 +29,8 @@
     "lint": "eslint src/",
     "test": "react-scripts test",
     "test-coverage": "react-scripts test --coverage --watchAll",
-    "eject": "react-scripts eject"
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -54,6 +56,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.0",
     "eslint-plugin-react": "^7.32.0",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "sass": "^1.57.1"
   }
 }
