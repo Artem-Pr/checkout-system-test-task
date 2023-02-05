@@ -1,6 +1,6 @@
 {
   "name": "checkout-system-test-task",
-  "homepage": "https://artem-pr.github.io/checkout-system-test-task/",
+  "homepage": "https://artem-pr.github.io/checkout-system-test-task",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
