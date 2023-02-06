@@ -30,7 +30,7 @@ export const Layout = () => {
     return (
         <AntdLayout className={cn(styles.contentWrapper, 'h-100vh d-grid')}>
             <Header className="d-flex justify-between">
-                <div className={styles.logo}>Logo</div>
+                <div className={styles.logo}>Logo test1</div>
                 <Menu
                     className={styles.menu}
                     theme="dark"
