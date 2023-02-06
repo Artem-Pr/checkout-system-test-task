@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/checkout-system-test-task/static/css/main.1abb4c06.css",
-    "main.js": "/checkout-system-test-task/static/js/main.c66044f1.js",
+    "main.js": "/checkout-system-test-task/static/js/main.c0a19de0.js",
     "static/css/984.ae5a5299.chunk.css": "/checkout-system-test-task/static/css/984.ae5a5299.chunk.css",
     "static/js/984.b2abb1a4.chunk.js": "/checkout-system-test-task/static/js/984.b2abb1a4.chunk.js",
     "static/css/704.42ccfc27.chunk.css": "/checkout-system-test-task/static/css/704.42ccfc27.chunk.css",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.1abb4c06.css",
-    "static/js/main.c66044f1.js"
+    "static/js/main.c0a19de0.js"
   ]
 }
