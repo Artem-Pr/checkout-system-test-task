@@ -15,7 +15,7 @@ const MainPage = lazy(() => import('./pages/MainPage'));
 const SettingsPage = lazy(() => import('./pages/Settings'));
 
 const App = () => (
-    <BrowserRouter>
+    <BrowserRouter basename="/checkout-system-test-task/">
         <Routes>
             <Route
                 path="/"
