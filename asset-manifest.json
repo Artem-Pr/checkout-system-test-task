@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/checkout-system-test-task/static/css/main.1abb4c06.css",
+    "main.js": "/checkout-system-test-task/static/js/main.07accfd6.js",
+    "static/css/984.ae5a5299.chunk.css": "/checkout-system-test-task/static/css/984.ae5a5299.chunk.css",
+    "static/js/984.b2abb1a4.chunk.js": "/checkout-system-test-task/static/js/984.b2abb1a4.chunk.js",
+    "static/css/704.42ccfc27.chunk.css": "/checkout-system-test-task/static/css/704.42ccfc27.chunk.css",
+    "static/js/704.270bc5b8.chunk.js": "/checkout-system-test-task/static/js/704.270bc5b8.chunk.js",
+    "static/js/74.cc46804a.chunk.js": "/checkout-system-test-task/static/js/74.cc46804a.chunk.js",
+    "static/js/27.807954e7.chunk.js": "/checkout-system-test-task/static/js/27.807954e7.chunk.js",
+    "static/js/96.c7085d65.chunk.js": "/checkout-system-test-task/static/js/96.c7085d65.chunk.js",
+    "static/js/151.ef3d983f.chunk.js": "/checkout-system-test-task/static/js/151.ef3d983f.chunk.js",
+    "static/js/269.810b7192.chunk.js": "/checkout-system-test-task/static/js/269.810b7192.chunk.js",
+    "static/js/601.ef60b746.chunk.js": "/checkout-system-test-task/static/js/601.ef60b746.chunk.js",
+    "static/media/42140.webp": "/checkout-system-test-task/static/media/42140.8a3e4e1b5f5f89f50d4a.webp",
+    "static/media/42154.webp": "/checkout-system-test-task/static/media/42154.107df0be4c417666c0f2.webp",
+    "static/media/42141.webp": "/checkout-system-test-task/static/media/42141.3acf69a6cb57d1834bb8.webp",
+    "static/media/42107.webp": "/checkout-system-test-task/static/media/42107.efb48a04e4a04bce12e2.webp",
+    "static/media/42138.webp": "/checkout-system-test-task/static/media/42138.5521888bf02f3f1f5ad4.webp",
+    "static/media/42123.webp": "/checkout-system-test-task/static/media/42123.fd1698f6390dfe5b2b36.webp",
+    "static/media/42111.webp": "/checkout-system-test-task/static/media/42111.d936f9eb3d953d7cd06e.webp",
+    "static/media/image-placeholder.svg": "/checkout-system-test-task/static/media/image-placeholder.837dc5141d33b2d03125c842fcd7bd5a.svg",
+    "index.html": "/checkout-system-test-task/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.1abb4c06.css",
+    "static/js/main.07accfd6.js"
+  ]
+}
