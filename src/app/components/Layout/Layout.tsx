@@ -12,13 +12,12 @@ import cn from 'classnames';
 
 import {RoutePaths} from 'src/globalTypes';
 import {getFormattedPrice} from 'src/helpers';
-
-import styles from './Layout.module.scss';
-
 import {getTotalPriceEntity} from 'src/redux/selectors/cartSelectors';
 import {getLoading} from 'src/redux/selectors/sessionSelectors';
 
 import {navigateMenuItems} from './helpers';
+
+import styles from './Layout.module.scss';
 
 export const Layout = () => {
     const {pathname} = useLocation();
