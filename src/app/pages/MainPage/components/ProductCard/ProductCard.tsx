@@ -19,9 +19,9 @@ import {
 } from 'src/helpers';
 import type {PriceObject} from 'src/redux/reducers/productsReducer/types';
 
-import styles from './ProductCard.module.scss';
-
 import {getActualPrice} from './helpers';
+
+import styles from './ProductCard.module.scss';
 
 const {Text} = Typography;
 

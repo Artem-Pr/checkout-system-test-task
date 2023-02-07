@@ -8,9 +8,9 @@ import {fetchProducts} from 'src/redux/reducers/productsReducer/Thunks';
 import {getProductsWithPrice} from 'src/redux/selectors/productsSelectors';
 import {useAppDispatch} from 'src/redux/store';
 
-import styles from './MainPage.module.scss';
-
 import {ProductCard} from './components';
+
+import styles from './MainPage.module.scss';
 
 export const MainPage = () => {
     const dispatch = useAppDispatch();

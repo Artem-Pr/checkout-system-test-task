@@ -13,9 +13,9 @@ import {
     getTotalPriceEntity,
 } from 'src/redux/selectors/cartSelectors';
 
-import styles from './Cart.module.scss';
-
 import {cartTableColumns} from './helpers';
+
+import styles from './Cart.module.scss';
 
 const {Title} = Typography;
 
